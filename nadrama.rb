@@ -5,24 +5,24 @@
 class Nadrama < Formula
   desc "The official CLI for Nadrama.com"
   homepage "https://nadrama.com"
-  version "20250404133712"
+  version "20250406235805"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nadrama-com/nadrama/releases/download/20250404133712/nadrama_darwin_x86_64.tar.gz"
-      sha256 "4833feda900c55c8a5d9813e5a4970e145ee8af1851e20333532d0e6779ada7e"
+      url "https://github.com/nadrama-com/homebrew-tap/releases/download/20250406235805/homebrew-tap_darwin_x86_64.tar.gz"
+      sha256 "fcd90f1eb6cc3a0c753c129b9b53b52be448e5d9c93c59e87010b093216706ce"
 
       def install
-        bin.install "nadrama"
+        bin.install "homebrew-tap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nadrama-com/nadrama/releases/download/20250404133712/nadrama_darwin_arm64.tar.gz"
-      sha256 "827c2b458b583e2dde9ab1d5112060a1bdad3d4428097b61589cf8d2f919f231"
+      url "https://github.com/nadrama-com/homebrew-tap/releases/download/20250406235805/homebrew-tap_darwin_arm64.tar.gz"
+      sha256 "fc68ad1c5971ead05bedc58e125238a6ebc4c34439bbf02cca963404397da38f"
 
       def install
-        bin.install "nadrama"
+        bin.install "homebrew-tap"
       end
     end
   end
@@ -30,21 +30,21 @@ class Nadrama < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nadrama-com/nadrama/releases/download/20250404133712/nadrama_linux_x86_64.tar.gz"
-        sha256 "07b8a5699daf2bb834a1d17d44f8cef4d50cf4ea9cd97310a0b71401b7d1d603"
+        url "https://github.com/nadrama-com/homebrew-tap/releases/download/20250406235805/homebrew-tap_linux_x86_64.tar.gz"
+        sha256 "bff2492539ad0d1cd6dffc25c52b0615e618435f645a30750075ae7ae764d845"
 
         def install
-          bin.install "nadrama"
+          bin.install "homebrew-tap"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nadrama-com/nadrama/releases/download/20250404133712/nadrama_linux_arm64.tar.gz"
-        sha256 "2e0ce755e789b605f7cabeb4dbfaa7b3af2f9f0b41285f57ef7f8ef61b8d02fc"
+        url "https://github.com/nadrama-com/homebrew-tap/releases/download/20250406235805/homebrew-tap_linux_arm64.tar.gz"
+        sha256 "01ef917e158b9c13f60befcfacb6d08036392647f55b82dacc2d07c58c7788c6"
 
         def install
-          bin.install "nadrama"
+          bin.install "homebrew-tap"
         end
       end
     end
