@@ -1,14 +1,14 @@
 class Nadrama < Formula
   desc "Official Nadrama command-line interface"
   homepage "https://nadrama.com"
-  version "1.0.20260918133743"
+  version "1.0.20260918141617"
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nadrama-com/cli/releases/download/v1.0.20260918133743/nadrama_1.0.20260918133743_darwin_arm64.tar.gz"
-      sha256 "418e30ae2378ca2a410ffffbbcef402ac4fe8cff09344565b92c0977db115a71"
+      url "https://github.com/nadrama-com/cli/releases/download/v1.0.20260918141617/nadrama_1.0.20260918141617_darwin_arm64.tar.gz"
+      sha256 "6e521d085eeebbbe9173ffcbb122318b75a9456b037fb5fa27dcbe1921a422b5"
     else
-      url "https://github.com/nadrama-com/cli/releases/download/v1.0.20260918133743/nadrama_1.0.20260918133743_darwin_amd64.tar.gz"
-      sha256 "83e8a0866a30eb0616312d2928c05587675469914c7e7710b47e35c7f68435d5"
+      url "https://github.com/nadrama-com/cli/releases/download/v1.0.20260918141617/nadrama_1.0.20260918141617_darwin_amd64.tar.gz"
+      sha256 "a60447be783a002777e02a50e15fb9560b34577ebbead0067aa06e53f869eef0"
     end
   end
   def install
